@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if citationType == "mla" %}
+<p id='result'>
+{{authorLastName}} {{authorFirstName}} "{{articleTitle}}." <em>{{publisherName}}</em> {{dayPublished}} {{monthPublished}} {{yearPublished}} {{urlOfSource}} Accessed {{dateOfAccess}}
+</p>
+{% elif citationType == "apa" %}
+<p id='result'>
+{{authorLastName}} {{authorFirstName}} ({{yearPublished}}, {{monthPublished}} {{dayPublished}}). <em>{{articleTitle}}</em>. {{publisherName}}  {{urlOfSource}}
+</p>
+{% else %}
+{{authorLastName}} {{authorFirstName}} "{{articleTitle}}." {{publisherName}}
+{% endif %}
+{% endblock  %}
