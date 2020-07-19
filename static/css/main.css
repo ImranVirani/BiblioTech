@@ -1,11 +1,4 @@
-body {
-    background-color: #DBF5FF;
-}
-
-#header {
-    margin-left: 50px !important;
-}
-
-#result {
-    margin-left: 50px !important;
-}
+ #welcome-statement {
+     background-color: #DBF5FF;
+     margin: 20px;
+ }
