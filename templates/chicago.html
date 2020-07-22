@@ -1,5 +1,89 @@
 {% extends 'base.html' %}
 {% block content %}
-<div>
+<form method="POST">
+<div class="container"> 
+    <div>
+    <p> Please enter the relevant info for each source </p>
+    </div>
+
+    <div>
+    <p>Adding as much info as possible makes your citation more accurate and easier to reference.</p>
+    </div>
+
+    <div>
+    <label name= "authorFirstName">Author's First Name</label>
 </div>
+
+<div>
+    <input type="text" name="authorFirstName" style="height: 20px; width: 300px;">
+</div>
+
+<div>
+    <label name= "authorFirstName">Author's Last Name</label>
+</div>
+
+<div>
+    <input type="text" name="authorLastName" style="height: 20px; width: 300px;">
+</div>
+
+<div>
+    <label name= "authorFirstName">Title Of Article</label>
+</div>
+    
+<div>
+    <input type="text" name="articleTitle" style="height: 50; width: 300px;">
+</div>
+  
+<div>
+    <label name= "authorFirstName">Name of Publisher</label>
+</div>
+
+<div>
+    <input type="text" name="publisherName" style="height: 20px; width: 300px;">
+</div>
+
+<div>
+    <label name= "dayPublished"> Day the Website was Published</label>
+</div>
+
+<div>
+    <input type="text" name="dayPublished" style="height: 20px; width: 300px;">
+</div>
+
+<div>
+    <label name= "monthPublished"> Month the Website was Published</label>
+</div>
+
+<div>
+    <input type="text" name="monthPublished" style="height: 20px; width: 300px;">
+</div>
+    
+    <div>
+    <label name= "yearPublished">Year the Website was Published</label>
+    </div>
+
+    <div>
+    <input type="text" name="yearPublished" style="height: 20px; width: 300px;">
+    </div>
+    
+    <div>
+    <label name= "URL"> URL of the Website</label> 
+    </div>
+
+    <div>
+    <input type="text" name="urlOfSource" style="height: 20px; width: 300px;">
+    </div>
+    
+    <div>
+    <label name= "dateOfAccess">Date Accessed</label>  
+    </div>
+
+    <div>
+    <input type="text" name="dateOfAccess" style="height: 20px; width: 300px;">
+    </div>
+<div>
+   <button type="submit"><Submit</button> 
+</div>
+    </div>
+</form>
 {% endblock %}
