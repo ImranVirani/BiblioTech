@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<form method="POST">
+<script> var formatType = "apa";</script>
 <div class="container"> 
     <div>
     <p> Please enter the relevant info for each source </p>
@@ -11,77 +11,79 @@
     </div>
 
     <div>
-    <label name= "authorFirstName">Author's First Name</label>
+    <label for="authorFirstName">Author's First Name</label>
 </div>
 
 <div>
-    <input type="text" name="authorFirstName" style="height: 20px; width: 300px;">
+    <input type="text" id="authorFirstName" style="height: 20px; width: 300px;">
 </div>
 
 <div>
-    <label name= "authorFirstName">Author's Last Name</label>
+    <label for= "authorLastName">Author's Last Name</label>
 </div>
 
 <div>
-    <input type="text" name="authorLastName" style="height: 20px; width: 300px;">
+    <input type="text" id="authorLastName" style="height: 20px; width: 300px;">
 </div>
 
 <div>
-    <label name= "authorFirstName">Title Of Article</label>
+    <label for= "articleTitle">Title Of Article</label>
 </div>
     
 <div>
-    <input type="text" name="articleTitle" style="height: 50; width: 300px;">
+    <input type="text" id="articleTitle" style="height: 50; width: 300px;">
 </div>
   
 <div>
-    <label name= "authorFirstName">Name of Publisher</label>
+    <label for= "publisherName">Name of Publisher</label>
 </div>
 
 <div>
-    <input type="text" name="publisherName" style="height: 20px; width: 300px;">
+    <input type="text" id="publisherName" style="height: 20px; width: 300px;">
 </div>
 
 <div>
-    <label name= "dayPublished"> Day the Website was Published</label>
+    <label for= "dayPublished"> Day the Website was Published</label>
 </div>
 
 <div>
-    <input type="text" name="dayPublished" style="height: 20px; width: 300px;">
+    <input type="text" id="dayPublished" style="height: 20px; width: 300px;">
 </div>
 
 <div>
-    <label name= "monthPublished"> Month the Website was Published</label>
+    <label for= "monthPublished"> Month the Website was Published</label>
 </div>
 
 <div>
-    <input type="text" name="monthPublished" style="height: 20px; width: 300px;">
+    <input type="text" id="monthPublished" style="height: 20px; width: 300px;">
 </div>
     
     <div>
-    <label name= "yearPublished">Year the Website was Published</label>
+    <label for= "yearPublished">Year the Website was Published</label>
     </div>
 
     <div>
-    <input type="text" name="yearPublished" style="height: 20px; width: 300px;">
+    <input type="text" id="yearPublished" style="height: 20px; width: 300px;">
     </div>
     
     <div>
-    <label name= "URL"> URL of the Website</label> 
+    <label for= "URL"> URL of the Website</label> 
     </div>
 
     <div>
-    <input type="text" name="urlOfSource" style="height: 20px; width: 300px;">
+    <input type="text" id="urlOfSource" style="height: 20px; width: 300px;">
     </div>
     
     <div>
-    <label name= "siteName">Site Name</label>  
+    <label for= "dateOfAccess">Date Accessed</label>  
     </div>
 
     <div>
-    <input type="text" name="siteName" style="height: 20px; width: 300px;">
+    <input type="text" id="dateOfAccess" style="height: 20px; width: 300px;">
     </div>
-<button type="submit" class="btn btn-primary">Submit</button>
+<div>
+   <button id="submit-button">Submit</button> 
+</div>
     </div>
-</form>
+<p id="result-entry"></p>
 {% endblock %}
