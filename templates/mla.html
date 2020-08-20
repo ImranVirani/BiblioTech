@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <script type="text/javascript"
-         src="{{ url_for('static/js', filename='MLA.js') }}"></script>
+         src="{{ url_for('static', filename='js/MLA.js') }}"></script>
 <script> var formatType = "mla";</script>
 <div class="container"> 
     <div>
@@ -87,6 +87,8 @@
    <button id="submit-button">Submit</button> 
 </div>
     </div>
-<div id="result-entry">
-</div>
+<p id="result-entry">
+</p>
+<script type="text/javascript"
+         src="{{ url_for('static', filename='js/MLA.js') }}"></script>
 {% endblock %}

@@ -12,4 +12,5 @@ function displayEntry() {
     var entry = document.getElementById("result-entry").innerHTML += authorLastName + ", " + authorFirstName + '. "' + articleTitle + '." ' + "<em>" + publisherName + "</em>" + " " + dayPublished + " " + monthPublished + " " + yearPublished + " " + urlOfSource + " " + "Accessed " + dateOfAccess;
     document.getElementById("result-entry").innerHTML += "<br>";
 }
+var test = "hello";
 document.getElementById("submit-button").addEventListener("click", displayEntry);
