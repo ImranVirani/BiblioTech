@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<script> var formatType = "apa";</script>
+<script type="text/javascript"
+         src="{{ url_for('static', filename='js/APA.js') }}"></script>
 <div class="container"> 
     <div>
     <p> Please enter the relevant info for each source </p>
