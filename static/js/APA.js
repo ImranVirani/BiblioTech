@@ -9,5 +9,5 @@ function displayEntry() {
     var urlOfSource = document.getElementById("urlOfSource").value;
     var dateOfAccess = document.getElementById("dateOfAccess").value;
     var entryNumber = 1;
-    var entry = document.getElementById("result-entry" + entryNumber).innerHTML += authorLastName + ", " + authorFirstName[0] + " (" + yearPublished + "," + " " + monthPublished + " " + dayPublished + "). " + "<em>" + articleTitle + "</em>." + " " + publisherName + ". " + urlOfSource;
+    var entry = document.getElementById("result-entry" + entryNumber).innerHTML = authorLastName + ", " + authorFirstName[0] + " (" + yearPublished + "," + " " + monthPublished + " " + dayPublished + "). " + "<em>" + articleTitle + "</em>." + " " + publisherName + ". " + urlOfSource;
 }
