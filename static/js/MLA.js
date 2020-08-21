@@ -9,7 +9,7 @@ function displayEntry() {
     var urlOfSource = document.getElementById("urlOfSource").value;
     var dateOfAccess = document.getElementById("dateOfAccess").value;
     var entryNumber = 1;
-    var entry = document.getElementById("result-entry").innerHTML += authorLastName + ", " + authorFirstName + '. "' + articleTitle + '." ' + "<em>" + publisherName + "</em>" + " " + dayPublished + " " + monthPublished + " " + yearPublished + " " + urlOfSource + " " + "Accessed " + dateOfAccess;
+    var entry = document.getElementById("result-entry").innerHTML += authorLastName + ", " + authorFirstName + '. "' + articleTitle + '." ' + "<em>" + publisherName + "</em>" + ", " + dayPublished + " " + monthPublished + " " + yearPublished + ", " + urlOfSource + " " + "Accessed " + dateOfAccess + ".";
     document.getElementById("result-entry").innerHTML += "<br>";
 }
 document.getElementById("submit-button").addEventListener("click", displayEntry);
