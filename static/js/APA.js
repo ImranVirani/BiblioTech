@@ -11,3 +11,4 @@ function displayEntry() {
     var entryNumber = 1;
     var entry = document.getElementById("result-entry" + entryNumber).innerHTML = authorLastName + ", " + authorFirstName[0] + " (" + yearPublished + "," + " " + monthPublished + " " + dayPublished + "). " + "<em>" + articleTitle + "</em>." + " " + publisherName + ". " + urlOfSource;
 }
+document.getElementById("submit-button").addEventListener("click", displayEntry);
