@@ -1,0 +1,22 @@
+{
+  "name": "bibliographyapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/potatoman16/thebibliographyapp.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/potatoman16/thebibliographyapp/issues"
+  },
+  "homepage": "https://gitlab.com/potatoman16/thebibliographyapp#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}

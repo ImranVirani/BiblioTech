@@ -10,6 +10,6 @@ function displayEntry() {
     var dateOfAccess = document.getElementById("dateOfAccess").value;
     var entryNumber = 1;
     // Replace with Chichago formatting
-    var entry = document.getElementById("result-entry").innerHTML = authorLastName + ", " + authorFirstName + '. "' + articleTitle + '." ' + "<em>" + publisherName + "</em>" + ", " + dayPublished + " " + monthPublished + " " + yearPublished + ", " + urlOfSource + " " + "Accessed " + dateOfAccess + ".";
+    var entry = document.getElementById("result-entry").innerHTML = authorLastName + ", " + authorFirstName + '. "' + articleTitle + '." ' + "<em>" + publisherName + "</em>" + ", " + monthPublished + " " + dayPublished + " " + yearPublished + ", " + urlOfSource + ", " + "Accessed " + dateOfAccess + ".";
 }
 document.getElementById("submit-button").addEventListener("click", displayEntry);
